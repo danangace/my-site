@@ -9,7 +9,7 @@
         currently focusing on web development as Frontend Engineer,
         build future <a href="https://www.sekolah.mu/" target="_blank" class="text-blue">blended learning platform</a> in Indonesia.
       </p>
-      <a href="/about" class="text-lg">More about me -></a>
+      <router-link to="/about" class="text-lg">More about me -></router-link>
     </div>
   </section>
 </template>

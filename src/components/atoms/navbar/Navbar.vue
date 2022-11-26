@@ -1,11 +1,12 @@
 <template>
   <nav class="navbar">
     <div class="navbar__content font-extralight">
-      <a href="/" class="text-white">Danang Putra Bahari</a>
+      <router-link to="/" class="text-white">Danang Putra Bahari</router-link>
+      <!-- <a href="/" class="text-white">Danang Putra Bahari</a> -->
       <div class="navigation">
-        <a href="/portofolio" class="text-white">Portofolio</a>
-        <a href="/about" class="text-white">About</a>
-        <a href="/contact" class="text-white">Contact</a>
+        <router-link to="/portofolio" class="text-white">Portofolio</router-link>
+        <router-link to="/about" class="text-white">About</router-link>
+        <router-link to="/contact" class="text-white">Contact</router-link>
       </div>
     </div>
   </nav>
