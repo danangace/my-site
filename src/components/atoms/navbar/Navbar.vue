@@ -1,19 +1,32 @@
-<script setup></script>
+<script setup>
+import { defineEmits } from 'vue'
+const emits = defineEmits(['showNavigation'])
+const props = defineProps({
+  iconType: {
+    type: String,
+    default: 'menu'
+  }
+})
+const handleIconClicked = () => {
+  emits('showNavigation')
+}
+</script>
 <template>
-  <nav class="navbar">
+  <section class="navbar">
     <div class="navbar__content font-extralight">
-      <router-link to="/" class="text-white">Danang Putra Bahari</router-link>
+      <router-link to="/" class="text-white font-light text-lg">Danang Putra Bahari</router-link>
       <div class="navigation">
-        <router-link to="/portofolio" class="text-white">Portofolio</router-link>
-        <router-link to="/about" class="text-white">About</router-link>
-        <router-link to="/contact" class="text-white">Contact</router-link>
+        <router-link to="/portofolio" class="text-white font-light text-base">Portofolio</router-link>
+        <router-link to="/about" class="text-white font-light text-base">About</router-link>
+        <router-link to="/contact" class="text-white font-light text-base">Contact</router-link>
       </div>
+      <span class="material-symbols-rounded text-white cursor-pointer navbar__icon" @click="handleIconClicked">{{ iconType }}</span>
     </div>
-  </nav>
+  </section>
 </template>
 <style scoped>
 .navbar {
-  padding: 20px 0px;
+  padding: 20px 20px;
   background-color: var(--color-primary);
   display: flex;
   justify-content: center;
@@ -27,7 +40,22 @@
 }
 
 .navigation {
-  display: flex;
+  display: none;
   column-gap: 1rem;
+}
+
+.navbar__icon {
+  display: block;
+  z-index: 30;
+}
+
+@media screen and (min-width: 500px) {
+  .navigation {
+    display: flex;
+  }
+
+  .navbar__icon {
+    display: none;
+  }
 }
 </style>

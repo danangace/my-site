@@ -13,6 +13,5 @@ import Base from '../../components/content/Base.vue'
   display: flex;
   justify-content: center;
   background-color: var(--color-primary);
-  padding: 24px 0px;
 }
 </style>
