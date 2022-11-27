@@ -1,11 +1,11 @@
 {
   "name": "my-site",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "homepage": "https://danangputrab.site/",
   "scripts": {
-    "dev": "vite --port 7777",
+    "dev": "vite --port 8080",
     "build": "vite build",
     "preview": "vite preview"
   },
