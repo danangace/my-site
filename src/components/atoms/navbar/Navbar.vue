@@ -2,7 +2,6 @@
   <nav class="navbar">
     <div class="navbar__content font-extralight">
       <router-link to="/" class="text-white">Danang Putra Bahari</router-link>
-      <!-- <a href="/" class="text-white">Danang Putra Bahari</a> -->
       <div class="navigation">
         <router-link to="/portofolio" class="text-white">Portofolio</router-link>
         <router-link to="/about" class="text-white">About</router-link>
