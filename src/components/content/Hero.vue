@@ -1,3 +1,4 @@
+<script setup></script>
 <template>
   <section class="home__content">
     <h1 class="font-semibold text-4xl text-white">

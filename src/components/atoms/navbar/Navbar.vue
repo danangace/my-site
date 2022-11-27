@@ -1,3 +1,4 @@
+<script setup></script>
 <template>
   <nav class="navbar">
     <div class="navbar__content font-extralight">
