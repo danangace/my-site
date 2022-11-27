@@ -14,7 +14,7 @@
 <style scoped>
 .navbar {
   padding: 20px 0px;
-  background-color: var(--color-blue);
+  background-color: var(--color-primary);
   display: flex;
   justify-content: center;
 }

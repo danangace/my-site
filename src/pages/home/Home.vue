@@ -12,7 +12,7 @@ import Base from '../../components/content/Base.vue'
 .home__wrapper {
   display: flex;
   justify-content: center;
-  background-color: var(--color-blue);
+  background-color: var(--color-primary);
   padding: 24px 0px;
 }
 </style>
