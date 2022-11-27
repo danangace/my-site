@@ -3,8 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://danangputrab.site/",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 7777",
     "build": "vite build",
     "preview": "vite preview"
   },
